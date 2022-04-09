@@ -15,6 +15,6 @@ antigen theme robbyrussell
 antigen apply
 
 alias ll="ls -al"
-alias vim="nvim"
 alias vi="nvim"
+alias vim="nvim"
 
