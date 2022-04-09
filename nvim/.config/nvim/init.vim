@@ -1,6 +1,5 @@
 syntax on
 
-filetype off
 filetype plugin indent on
 
 set smartindent
