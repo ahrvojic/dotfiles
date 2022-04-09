@@ -1,5 +1,8 @@
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
+alias vi="nvim"
+alias vim="nvim"
+
 source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
@@ -13,8 +16,4 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme robbyrussell
 
 antigen apply
-
-alias ll="ls -al"
-alias vi="nvim"
-alias vim="nvim"
 
