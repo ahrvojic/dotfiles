@@ -14,7 +14,6 @@
 
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off" delay="1000">
-
         <TrayButton label="JWM">root:1</TrayButton>
         <Spacer width="2"/>
         <TrayButton label="_">showdesktop</TrayButton>
@@ -24,13 +23,8 @@
 
         <TaskList maxwidth="256"/>
 
-        <Swallow width="32" height="32" name="xclock">xclock</Swallow>
-
         <Dock/>
-        <Clock format="%l:%M %p">
-            <Button mask="123">exec:xclock</Button>
-        </Clock>
-
+        <Clock format="%l:%M %p"/>
     </Tray>
 
     <!-- Visual Styles -->
