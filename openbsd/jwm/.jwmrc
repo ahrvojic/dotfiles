@@ -6,29 +6,11 @@
         <Menu icon="folder" label="Applications">
             <Program icon="web-browser" label="Chromium">chrome</Program>
        	    <Program icon="utilities-terminal" label="Kitty">kitty</Program> 
-	</Menu>
-        <Separator/>
-        <Program icon="lock" label="Lock">
-           xscreensaver-command -lock
-        </Program>
+        </Menu>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
         <Exit label="Exit" confirm="true" icon="exit"/>
     </RootMenu>
-
-    <!-- Options for program groups. -->
-    <Group>
-        <Option>tiled</Option>
-    </Group>
-    <Group>
-        <Name>xterm</Name>
-        <Option>vmax</Option>
-    </Group>
-    <Group>
-        <Name>xclock</Name>
-        <Option>drag</Option>
-        <Option>notitle</Option>
-    </Group>
 
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off" delay="1000">
@@ -45,13 +27,15 @@
         <Swallow width="32" height="32" name="xclock">xclock</Swallow>
 
         <Dock/>
-        <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
+        <Clock format="%l:%M %p">
+            <Button mask="123">exec:xclock</Button>
+        </Clock>
 
     </Tray>
 
     <!-- Visual Styles -->
     <WindowStyle decorations="motif">
-        <Font>Sans-12:bold</Font>
+        <Font>Sans-10:bold</Font>
         <Width>4</Width>
         <Corner>0</Corner>
         <Foreground>#FFFFFF</Foreground>
@@ -64,13 +48,13 @@
         </Active>
     </WindowStyle>
     <TrayStyle decorations="motif">
-        <Font>Sans-12</Font>
+        <Font>Sans-10</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
         <Opacity>0.75</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
-      <Font>Sans-12</Font>
+      <Font>Sans-10</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
@@ -88,7 +72,7 @@
         </Active>
     </PagerStyle>
     <MenuStyle decorations="motif">
-        <Font>Sans-12</Font>
+        <Font>Sans-10</Font>
         <Foreground>#FFFFFF</Foreground>
         <Background>#333333</Background>
         <Active>
@@ -98,30 +82,11 @@
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>Sans-12</Font>
+        <Font>Sans-10</Font>
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
 
-    <!-- Path where icons can be found.
-         IconPath can be listed multiple times to allow searching
-         for icons in multiple paths.
-      -->
-    <IconPath>
-      /usr/local/share/icons/Tango/scalable/actions
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Tango/scalable/apps
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Tango/scalable/places
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Tango/scalable/status
-    </IconPath>
-    <IconPath>
-      /usr/local/share/icons/Tango/scalable/mimetypes
-    </IconPath>
     <IconPath>
       /usr/local/share/jwm
     </IconPath>
