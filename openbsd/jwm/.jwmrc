@@ -4,8 +4,8 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
         <Menu icon="folder" label="Applications">
-            <Program icon="web-browser" label="Chromium">chrome</Program>
-       	    <Program icon="utilities-terminal" label="Kitty">kitty</Program> 
+            <Program label="Chromium">chrome</Program>
+            <Program label="Kitty">kitty</Program> 
         </Menu>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
@@ -24,6 +24,7 @@
         <TaskList maxwidth="256"/>
 
         <Dock/>
+
         <Clock format="%l:%M %p"/>
     </Tray>
 
@@ -34,7 +35,7 @@
         <Corner>0</Corner>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
-        <Opacity>0.5</Opacity>
+        <Opacity>1.0</Opacity>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#0077CC</Background>
@@ -45,7 +46,7 @@
         <Font>Sans-10</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
-        <Opacity>0.75</Opacity>
+        <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
       <Font>Sans-10</Font>
@@ -73,7 +74,7 @@
             <Foreground>#FFFFFF</Foreground>
             <Background>#0077CC</Background>
         </Active>
-        <Opacity>0.85</Opacity>
+        <Opacity>1.0</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>Sans-10</Font>
@@ -136,6 +137,12 @@
     <Key mask="A" key="Up">udesktop</Key>
     <Key mask="A" key="Down">ddesktop</Key>
 
+    <Key mask="AC" key="Right">maxright</Key>
+    <Key mask="AC" key="Left">maxleft</Key>
+    <Key mask="AC" key="Up">maxtop</Key>
+    <Key mask="AC" key="Down">maxbottom</Key>
+    <Key mask="AC" key="m">fullscreen</Key>
+
     <!-- Mouse bindings -->
     <Mouse context="root" button="4">ldesktop</Mouse>
     <Mouse context="root" button="5">rdesktop</Mouse>
@@ -170,3 +177,4 @@
     <Mouse context="minimize" button="-3">shade</Mouse>
 
 </JWM>
+
