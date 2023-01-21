@@ -1,7 +1,6 @@
 export PATH="$HOME/bin:$PATH"
 
-alias vi="nvim"
-alias vim="nvim"
+export DOCKER_HOST="ssh://anth@docker"
 
 source $HOME/antigen/antigen.zsh
 
