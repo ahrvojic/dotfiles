@@ -1,8 +1,5 @@
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
-alias vi="nvim"
-alias vim="nvim"
-
 source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
