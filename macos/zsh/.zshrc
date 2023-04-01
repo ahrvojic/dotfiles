@@ -1,16 +1,12 @@
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
-source /usr/local/share/antigen/antigen.zsh
+source /usr/local/opt/antidote/share/antidote/antidote.zsh
+antidote load
 
-antigen use oh-my-zsh
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
-antigen bundle fzf
-antigen bundle git
-antigen bundle command-not-found
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
+autoload -Uz promptinit && promptinit && prompt pure
+zstyle :prompt:pure:prompt:success color cyan
 
-antigen theme robbyrussell
-
-antigen apply
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
