@@ -2,17 +2,12 @@ export PATH="$HOME/bin:$PATH"
 
 export DOCKER_HOST="ssh://anth@docker"
 
-source $HOME/antigen/antigen.zsh
+source $HOME/.antidote/antidote.zsh
+antidote load
 
-antigen use oh-my-zsh
+autoload -Uz promptinit && promptinit && prompt pure
+zstyle :prompt:pure:prompt:success color cyan
 
-antigen bundle git
-antigen bundle command-not-found
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen theme robbyrussell
-
-antigen apply
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
