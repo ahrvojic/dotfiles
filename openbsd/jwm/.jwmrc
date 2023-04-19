@@ -143,6 +143,8 @@
     <Key mask="AC" key="Down">maxbottom</Key>
     <Key mask="AC" key="m">fullscreen</Key>
 
+    <Key mask="" key="Super_L">exec:rofi -show combi</Key>
+
     <!-- Mouse bindings -->
     <Mouse context="root" button="4">ldesktop</Mouse>
     <Mouse context="root" button="5">rdesktop</Mouse>
