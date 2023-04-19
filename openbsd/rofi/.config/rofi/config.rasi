@@ -3,3 +3,5 @@ configuration {
     combi-modes: [ window, drun, run ];
 }
 
+@theme "/usr/local/share/rofi/themes/android_notification.rasi"
+
