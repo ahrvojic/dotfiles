@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/jdk-17/bin:$PATH"
 
 alias history="history 1"
 
