@@ -5,6 +5,7 @@
     <RootMenu onroot="12">
         <Menu icon="folder" label="Applications">
             <Program label="Chromium">chrome</Program>
+            <Program label="IntelliJ">intellij</Program>
             <Program label="Kitty">kitty</Program> 
         </Menu>
         <Separator/>
