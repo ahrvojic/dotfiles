@@ -5,3 +5,6 @@ logs/
 
 .idea/
 *.iml
+
+*.elf
+
