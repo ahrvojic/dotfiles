@@ -1,5 +1,3 @@
-source $HOME/.profile
-
 source $HOME/opt/antidote/antidote.zsh
 antidote load
 
