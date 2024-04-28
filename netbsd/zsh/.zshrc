@@ -3,6 +3,9 @@ export LANG="en_US.UTF-8"
 source $HOME/opt/antidote/antidote.zsh
 antidote load
 
+export PURE_PROMPT_SYMBOL=">"
+export PURE_PROMPT_VICMD_SYMBOL="<"
+
 autoload -Uz promptinit && promptinit && prompt pure
 zstyle :prompt:pure:prompt:success color cyan
 
