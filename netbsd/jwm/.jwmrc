@@ -4,7 +4,8 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
         <Menu icon="folder" label="Applications">
-            <Program label="uxterm">uxterm</Program> 
+            <Program label="Firefox">firefox</Program>
+            <Program label="Terminal">st</Program> 
         </Menu>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
