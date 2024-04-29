@@ -1,2 +1,1 @@
-export LANG="en_US.UTF-8"
-export TERM=rxvt
+source $HOME/.profile
