@@ -5,7 +5,7 @@
     <RootMenu onroot="12">
         <Menu icon="folder" label="Applications">
             <Program label="Firefox">firefox</Program>
-            <Program label="Terminal">st</Program> 
+            <Program label="Terminal">urxvt -e /usr/pkg/bin/zsh</Program> 
         </Menu>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
