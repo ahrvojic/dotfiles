@@ -4,9 +4,8 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
         <Menu icon="folder" label="Applications">
-            <Program label="Chromium">chrome</Program>
-            <Program label="IntelliJ">intellij</Program>
-            <Program label="Kitty">kitty</Program> 
+            <Program label="Firefox">firefox</Program>
+            <Program label="Terminal">st</Program> 
         </Menu>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
@@ -15,24 +14,18 @@
 
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off" delay="1000">
-        <TrayButton label="JWM">root:1</TrayButton>
-        <Spacer width="2"/>
         <TrayButton label="_">showdesktop</TrayButton>
         <Spacer width="2"/>
-
         <Pager labeled="true"/>
-
         <TaskList maxwidth="256"/>
-
         <Dock/>
-
-        <Clock format="%l:%M %p"/>
+        <Clock format="%l:%M %p" zone=":America/New_York"/>
     </Tray>
 
     <!-- Visual Styles -->
-    <WindowStyle decorations="motif">
-        <Font>Sans-10:bold</Font>
-        <Width>4</Width>
+    <WindowStyle decorations="flat">
+        <Font>Sans-8:bold</Font>
+        <Width>2</Width>
         <Corner>0</Corner>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
@@ -43,14 +36,14 @@
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
-    <TrayStyle decorations="motif">
-        <Font>Sans-10</Font>
+    <TrayStyle decorations="flat">
+        <Font>Sans-8</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
         <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
-      <Font>Sans-10</Font>
+      <Font>Sans-8</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
@@ -67,8 +60,8 @@
             <Background>#004488</Background>
         </Active>
     </PagerStyle>
-    <MenuStyle decorations="motif">
-        <Font>Sans-10</Font>
+    <MenuStyle decorations="flat">
+        <Font>Sans-8</Font>
         <Foreground>#FFFFFF</Foreground>
         <Background>#333333</Background>
         <Active>
@@ -78,7 +71,7 @@
         <Opacity>1.0</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>Sans-10</Font>
+        <Font>Sans-8</Font>
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
@@ -180,4 +173,3 @@
     <Mouse context="minimize" button="-3">shade</Mouse>
 
 </JWM>
-

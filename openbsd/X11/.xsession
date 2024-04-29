@@ -6,4 +6,3 @@ setxkbmap -option ctrl:nocaps
 
 picom --backend xrender --vsync &
 jwm
-
