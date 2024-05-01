@@ -4,5 +4,4 @@ xrdb -merge "$HOME/.Xresources" &
 xset b off
 setxkbmap -option ctrl:nocaps
 
-picom --backend xrender --vsync &
 jwm

@@ -5,7 +5,8 @@
     <RootMenu onroot="12">
         <Menu icon="folder" label="Applications">
             <Program label="Firefox">firefox</Program>
-            <Program label="Terminal">st</Program> 
+            <Program label="Terminal">st -f 'JetBrains Mono:size=8'</Program>
+            <Program label="IntelliJ">intellij</Program>
         </Menu>
         <Separator/>
         <Restart label="Restart" icon="reload"/>
@@ -24,7 +25,7 @@
 
     <!-- Visual Styles -->
     <WindowStyle decorations="flat">
-        <Font>Sans-8:bold</Font>
+        <Font>JetBrains Mono:size=8:weight=bold</Font>
         <Width>2</Width>
         <Corner>0</Corner>
         <Foreground>#FFFFFF</Foreground>
@@ -37,13 +38,13 @@
         </Active>
     </WindowStyle>
     <TrayStyle decorations="flat">
-        <Font>Sans-8</Font>
+        <Font>JetBrains Mono:size=8</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
         <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
-      <Font>Sans-8</Font>
+      <Font>JetBrains Mono:size=8</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
@@ -61,7 +62,7 @@
         </Active>
     </PagerStyle>
     <MenuStyle decorations="flat">
-        <Font>Sans-8</Font>
+        <Font>JetBrains Mono:size=8</Font>
         <Foreground>#FFFFFF</Foreground>
         <Background>#333333</Background>
         <Active>
@@ -71,7 +72,7 @@
         <Opacity>1.0</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>Sans-8</Font>
+        <Font>JetBrains Mono:size=8</Font>
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
@@ -137,7 +138,7 @@
     <Key mask="AC" key="Down">maxbottom</Key>
     <Key mask="AC" key="m">fullscreen</Key>
 
-    <Key mask="" key="Super_L">exec:rofi -show combi</Key>
+    <Key mask="" key="Super_L">exec:dmenu_run -fn 'JetBrains Mono:size=8'</Key>
 
     <!-- Mouse bindings -->
     <Mouse context="root" button="4">ldesktop</Mouse>
