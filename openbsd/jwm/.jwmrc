@@ -25,7 +25,7 @@
 
     <!-- Visual Styles -->
     <WindowStyle decorations="flat">
-        <Font>JetBrains Mono:size=8:weight=bold</Font>
+        <Font>Fira Sans:size=8:weight=bold</Font>
         <Width>2</Width>
         <Corner>0</Corner>
         <Foreground>#FFFFFF</Foreground>
@@ -38,13 +38,13 @@
         </Active>
     </WindowStyle>
     <TrayStyle decorations="flat">
-        <Font>JetBrains Mono:size=8</Font>
+        <Font>Fira Sans:size=8</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
         <Opacity>1.0</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
-      <Font>JetBrains Mono:size=8</Font>
+      <Font>Fira Sans:size=8</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
@@ -62,7 +62,7 @@
         </Active>
     </PagerStyle>
     <MenuStyle decorations="flat">
-        <Font>JetBrains Mono:size=8</Font>
+        <Font>Fira Sans:size=8</Font>
         <Foreground>#FFFFFF</Foreground>
         <Background>#333333</Background>
         <Active>
@@ -72,7 +72,7 @@
         <Opacity>1.0</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>JetBrains Mono:size=8</Font>
+        <Font>Fira Sans:size=8</Font>
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
@@ -138,7 +138,7 @@
     <Key mask="AC" key="Down">maxbottom</Key>
     <Key mask="AC" key="m">fullscreen</Key>
 
-    <Key mask="" key="Super_L">exec:dmenu_run -fn 'JetBrains Mono:size=8'</Key>
+    <Key mask="" key="Super_L">exec:dmenu_run -fn 'Fira Sans:size=8'</Key>
 
     <!-- Mouse bindings -->
     <Mouse context="root" button="4">ldesktop</Mouse>
