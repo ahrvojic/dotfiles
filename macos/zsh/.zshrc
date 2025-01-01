@@ -1,8 +1,5 @@
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
-alias history="history 1"
-alias ll="ls -al"
-
 source /usr/local/opt/antidote/share/antidote/antidote.zsh
 antidote load
 
