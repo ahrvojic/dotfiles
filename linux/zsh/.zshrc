@@ -22,7 +22,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
-for file in ~/.zsh/*; do
-  source "$file"
-done
+ZSH_DIR="$HOME/.zsh"
+if [[ -d $ZSH_DIR ]]; then
+  for file in $ZSH_DIR/*; do
+    source "$file"
+  done
+fi
 
