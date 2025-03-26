@@ -14,6 +14,8 @@ zstyle :prompt:pure:prompt:success color cyan
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
