@@ -1,5 +1,4 @@
 belak/zsh-utils path:history
-sindresorhus/pure kind:fpath
 zdharma-continuum/fast-syntax-highlighting kind:defer
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
