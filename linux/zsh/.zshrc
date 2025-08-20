@@ -1,4 +1,5 @@
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export EDITOR=nvim
 
 alias history="history 1"
 alias ll="ls -al"
