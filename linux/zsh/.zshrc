@@ -17,6 +17,7 @@ bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
