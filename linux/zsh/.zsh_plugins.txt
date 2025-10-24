@@ -1,4 +1,4 @@
-belak/zsh-utils path:history
-zdharma-continuum/fast-syntax-highlighting kind:defer
+zdharma-continuum/fast-syntax-highlighting 
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
+atuinsh/atuin
