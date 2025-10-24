@@ -4,7 +4,7 @@ export EDITOR=nvim
 alias history="history 1"
 alias ll="ls -al"
 
-source $HOME/.antidote/antidote.zsh
+source "$HOME/.antidote/antidote.zsh"
 antidote load
 
 autoload -Uz compinit && compinit
@@ -23,8 +23,6 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 ZSH_DIR="$HOME/.zsh"
-if [[ -d $ZSH_DIR ]]; then
-  for file in $ZSH_DIR/*; do
-    source "$file"
-  done
+if [[ -d "$ZSH_DIR" ]]; then
+  for file in "$ZSH_DIR"/*; do source "$file"; done
 fi
