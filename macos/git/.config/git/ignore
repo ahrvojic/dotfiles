@@ -1,10 +1,5 @@
 .DS_Store
 
-logs/
-*.log
-
 .idea/
 *.iml
-
-*.elf
 
