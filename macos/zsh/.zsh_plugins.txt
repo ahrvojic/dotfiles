@@ -1,4 +1,4 @@
 zdharma-continuum/fast-syntax-highlighting 
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
-atuinsh/atuin
+zsh-users/zsh-completions
