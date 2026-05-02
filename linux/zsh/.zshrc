@@ -20,6 +20,7 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 eval "$(atuin init zsh)"
+eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -28,9 +29,6 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
-
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
 ZSH_DIR="$HOME/.zsh"
 if [[ -d "$ZSH_DIR" ]]; then
