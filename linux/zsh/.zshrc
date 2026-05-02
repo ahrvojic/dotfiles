@@ -19,8 +19,9 @@ antidote load
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
-eval "$(atuin init zsh)"
 eval "$(mise activate zsh)"
+
+eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
