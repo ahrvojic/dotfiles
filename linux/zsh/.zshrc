@@ -31,7 +31,3 @@ bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
 
-ZSH_DIR="$HOME/.zsh"
-if [[ -d "$ZSH_DIR" ]]; then
-  for file in "$ZSH_DIR"/*; do source "$file"; done
-fi
