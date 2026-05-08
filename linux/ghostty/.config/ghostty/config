@@ -1,3 +1,4 @@
 command = /usr/bin/zsh -l -i
 font-size = 10
+theme = GitHub Dark Default
 

@@ -12,6 +12,8 @@ setopt HIST_IGNORE_SPACE
 
 alias history="history 1"
 alias ll="ls -al"
+alias gs="git switch"
+alias gsc="git switch -c"
 
 source "$HOME/.antidote/antidote.zsh"
 antidote load
