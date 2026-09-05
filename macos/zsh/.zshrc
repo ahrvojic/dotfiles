@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/.local/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export EDITOR=nvim
 
 HISTFILE=~/.zsh_history
@@ -15,7 +15,7 @@ alias ll="ls -al"
 alias gs="git switch"
 alias gsc="git switch -c"
 
-source /usr/local/opt/antidote/share/antidote/antidote.zsh
+source "$HOME/.antidote/antidote.zsh"
 antidote load
 
 autoload -Uz compinit && compinit
