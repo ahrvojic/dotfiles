@@ -1,13 +1,22 @@
 local opt = vim.opt
 
-opt.number = true
-opt.showmatch = true
 opt.termguicolors = true
+opt.number = true
+opt.cursorline = true
+opt.scrolloff = 8
 
 opt.expandtab = true
-opt.shiftwidth = 2
 opt.tabstop = 2
+opt.shiftwidth = 2
 opt.smartindent = true
+opt.showmatch = true
 
-opt.mouse = ""
+opt.ignorecase = true
+opt.smartcase = true
+
+opt.splitright = true
+opt.splitbelow = true
+
+opt.undofile = true
+opt.clipboard = "unnamedplus"
 
