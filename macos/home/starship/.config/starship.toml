@@ -10,6 +10,12 @@ $line_break\
 $python\
 $character"""
 
+[username]
+show_always = false
+
+[hostname]
+ssh_only = true
+
 [directory]
 style = "blue"
 
@@ -25,6 +31,7 @@ style = "bright-black"
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
 style = "cyan"
+# Zero-width spaces: a dirty repo shows * and a clean one shows nothing.
 conflicted = "​"
 untracked = "​"
 modified = "​"
