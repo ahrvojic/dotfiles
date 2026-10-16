@@ -1,5 +1,6 @@
 export PATH="$HOME/.local/bin:/opt/local/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 export EDITOR=nvim
+export VISUAL=nvim
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -24,7 +25,7 @@ autoload -Uz compinit
 () {
   setopt local_options extended_glob
   local dump=${ZDOTDIR:-$HOME}/.zcompdump
-  if [[ ! -f $dump || -n $dump(#qN.mh+24) ]]; then
+  if [[ ! -f $dump || $dump -ot ${ZDOTDIR:-$HOME}/.zshrc || $dump -ot ${ZDOTDIR:-$HOME}/.zsh_plugins.txt || -n $dump(#qN.mh+24) ]]; then
     compinit -d $dump
   else
     compinit -C -d $dump

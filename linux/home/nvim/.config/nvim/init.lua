@@ -18,5 +18,4 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.undofile = true
-opt.clipboard = "unnamedplus"
 
