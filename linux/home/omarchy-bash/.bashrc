@@ -9,8 +9,9 @@
 source "$OMARCHY_PATH/default/bash/rc"
 
 # Add your own exports, aliases, and functions here.
-#
-# Make an alias for invoking commands you use constantly
-# alias p='python'
+export NVIM_APPNAME=astronvim
+
 alias ll='ls -al'
+alias gs='git switch'
+alias gsc='git switch -c'
 
